@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <script src="../../../@webcomponents/webcomponentsjs/webcomponents-lite.js"></script>
+  <script src="../../../web-component-tester/browser.js"></script>
+
+  <script type="module" src="../../src/vl-body.js"></script>
+</head>
+
+<body id="body" is="vl-body">
+  <script>
+    const sandbox = sinon.sandbox.create();
+
+    suite('vl-body', () => {
+      const should = chai.should();
+
+      test('controle body constructie', () => {
+        const body = document.getElementById('body');
+        assert.equal(body.constructor, customElements.get('vl-body'));
+      });
+    });
+  </script>
+</body>
+
+</html>
