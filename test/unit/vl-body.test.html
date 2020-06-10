@@ -12,11 +12,7 @@
 
 <body id="body" is="vl-body">
   <script>
-    const sandbox = sinon.sandbox.create();
-
     suite('vl-body', () => {
-      const should = chai.should();
-
       test('controle body constructie', () => {
         const body = document.getElementById('body');
         assert.equal(body.constructor, customElements.get('vl-body'));
