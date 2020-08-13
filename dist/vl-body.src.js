@@ -6,6 +6,7 @@ import {nativeVlElement, define} from 'vl-ui-core';
  * @classdesc
  *
  * @extends HTMLBodyElement
+ * @mixes nativeVlElement
  *
  * @see {@link https://www.github.com/milieuinfo/webcomponent-vl-ui-body/releases/latest|Release notes}
  * @see {@link https://www.github.com/milieuinfo/webcomponent-vl-ui-body/issues|Issues}
