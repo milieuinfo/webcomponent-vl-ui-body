@@ -22,6 +22,11 @@
         const html = document.querySelector('html');
         assert.equal(window.getComputedStyle(html)['font-family'], '"Flanders Art Sans", sans-serif');
       });
+
+      test('body bevat sticky class om de footer zichtbaar te maken bij weinig content', () => {
+        const body = document.getElementById('body');
+        assert.isTrue(body.classList.contains('vl-u-sticky-gf'));
+      });
     });
   </script>
 </body>

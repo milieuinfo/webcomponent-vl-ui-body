@@ -13,7 +13,11 @@ import {nativeVlElement, define} from 'vl-ui-core';
  * @see {@link https://webcomponenten.omgeving.vlaanderen.be/demo/vl-body.html|Demo}
  *
  */
-export class VlBody extends nativeVlElement(HTMLBodyElement) {}
+export class VlBody extends nativeVlElement(HTMLBodyElement) {
+  connectedCallback() {
+    this.classList.add('vl-u-sticky-gf');
+  }
+}
 
 define('vl-body', VlBody, {extends: 'body'});
 
