@@ -1,3 +1,1 @@
-module.exports = {
-  VlBody: require('../dist/vl-body.src.js').VlBody,
-};
+export * from '../dist/vl-body.src.js';
